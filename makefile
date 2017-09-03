@@ -8,11 +8,11 @@
   LIBS = -lpthread -lm
   # the build target executable
   TARGET = primhilos primproc primsec
-  all primhilos primproc primsec
+  all: primhilos primproc primsec
 
-  primhilos primhilos.c
+  primhilos: primhilos.c
 	$(CC) $(CFLAGS) -o primhilos primhilos.c $(LIBS)
-  primproc primproc.c
+  primproc: primproc.c
 	$(CC) $(CFLAGS) -o primproc primproc.c $(LIBS)	
-  primsec primsec.c
+  primsec: primsec.c
 	$(CC) $(CFLAGS) -o primsec primsec.c $(LIBS)
