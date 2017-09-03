@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-
+#include <string.h>
 int list [100001]={1,1}; // Lista de booleanos para definir si un num es primo o no
 
 // Main
